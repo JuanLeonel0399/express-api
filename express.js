@@ -38,7 +38,7 @@ app.get('/movies', (req, res) => {
 })
 
 app.get('/movies/:id', (req, res) => {
-  const id = req.params
+  const id = req.params.id
   const movie = movies.find(movie => movie.id === id)
   movie ? res.status(200).json(movie) : res.status(404).send('404: Not found')
 })
@@ -54,7 +54,7 @@ app.post('/movies', (req, res) => {
 })
 
 app.delete('/movies/:id', (req, res) => {
-  const { id } = req.params
+  const { id } = req.params.id
   const movieIndex = movies.findIndex(movie => movie.id === id)
 
   if (movieIndex === -1) return res.status(404).send('404: Not found')

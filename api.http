@@ -2,7 +2,7 @@
 GET http://localhost:3000/movies HTTP/1.1
 
 ### movies id
-GET http://localhost:3000/movies/ccf36f2e-8566-47f7-912d-9f4647250bc7 HTTP/1.1
+GET http://localhost:3000/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e0 HTTP/1.1
 
 ### movies gender
 GET http://localhost:3000/movies?genre=romance HTTP/1.1
